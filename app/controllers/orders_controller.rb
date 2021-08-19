@@ -2,6 +2,7 @@ class OrdersController < ApplicationController
 
   def show
     @order = Order.find(params[:id])
+    @line_items = LineItem.joins(:product).where(order_id: params[:id])
   end
 
   def create
@@ -55,5 +56,14 @@ class OrdersController < ApplicationController
     order.save!
     order
   end
-
+    # display the total in cents not dollars 
+    def cart_total
+      total = 0
+      cart.each do |product_id, details|
+        if p = Product.find_by(id: product_id)
+          total += p.price_cents * details['quantity'].to_i
+        end
+      end
+      total
+    end
 end
