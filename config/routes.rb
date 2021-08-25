@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'products#index'
 
   resources :products, only: [:index, :show]
-  resources :categories, only: [:index]
+  resources :categories, only: [:index, :show]
   #add the route for about page
   resources :about, only: [:index]
   resource :cart, only: [:show] do
