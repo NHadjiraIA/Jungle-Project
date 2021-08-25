@@ -2,6 +2,16 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+
+# Screenshots
+
+![Screenshot of home page] (https://github.com/NHadjiraIA/Jungle-Project/blob/testing-add-to-cart/public/images/all%20products.png)
+![Screenshot of Cart paege] (https://github.com/NHadjiraIA/Jungle-Project/blob/testing-add-to-cart/public/images/cart%20with%20products.png)
+![Screenshot of login paege] (https://github.com/NHadjiraIA/Jungle-Project/blob/testing-add-to-cart/public/images/login.png)
+![Screenshot of payment paege] (https://github.com/NHadjiraIA/Jungle-Project/blob/testing-add-to-cart/public/images/payment.png)
+![Screenshot of product details paege] (https://github.com/NHadjiraIA/Jungle-Project/blob/testing-add-to-cart/public/images/product%20details.png)
+![Screenshot of regester paege] (https://github.com/NHadjiraIA/Jungle-Project/blob/testing-add-to-cart/public/images/regester.png)
+
 ## Additional Steps for Apple M1 Machines
 
 1. Make sure that you are runnning Ruby 2.6.6 (`ruby -v`)
